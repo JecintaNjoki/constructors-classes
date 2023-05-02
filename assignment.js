@@ -38,7 +38,21 @@ person.toggleAvailability();
 // ● rentalEndDate (Date object): The end date of the rental period.
 // The Rental class or function constructor should also have a method called
 // calculateRentalDuration that returns the rental duration in days.
-
+class Rental{
+    constructor(renterName,rentalStartDate,rentalEndDate){
+        this.renterName=renterName;
+        this.rentalStartDate=rentalEndDate;
+        this.rentalEndDate=rentalEndDate
+       
+        
+    }
+    calculateRentalDuration(){
+        console.log(rental);
+    }
+};
+let rental=Rental("Audi","A8");
+console.log(rental);
+person.calculateRentalDuration();
 
 
 // 3) Create an instance of the Car class or function constructor for a car in the
