@@ -19,7 +19,7 @@ class Car{
     constructor(make,model,year){
         this.make=make;
         this.model=model;
-        this.year=year
+        this.year=year;
         this.available=available;
         
     }
@@ -29,7 +29,7 @@ class Car{
 };
 let car=Car("Toyota","camry");
 console.log(car);
-person.toggleAvailability();
+car.toggleAvailability();
 
 // 2) Create a Rental class or function constructor that has the following properties:
 // ● car (Car object): The car that has been rented.
@@ -52,7 +52,7 @@ class Rental{
 };
 let rental=Rental("Audi","A8");
 console.log(rental);
-person.calculateRentalDuration();
+rental.calculateRentalDuration();
 
 
 // 3) Create an instance of the Car class or function constructor for a car in the
@@ -66,6 +66,8 @@ person.calculateRentalDuration();
 // to create two JavaScript classes: Question and Quiz. The Question class will represent
 // individual questions, and the Quiz class will manage a collection of questions and the
 // user's progress.
+
+
 // 1. Create a Question class with the following properties:
 // ● text(string): The text of the question.
 // ● options(array): An array containing the multiple-choice options.
@@ -73,6 +75,21 @@ person.calculateRentalDuration();
 // The Question class should also have a method called checkAnswer that takes a
 // user's answer as a parameter and returns true if the answer is correct and false
 // otherwise.
+class Questions{
+    constructor(text,options,correctanswer){
+        this.text=text;
+        this.options=options;
+        this.correctanswer=correctanswer;
+        
+        
+    }
+    checkAnswer(){
+        console.log(questions);
+    }
+};
+let questions=Questions("train","program");
+console.log(questions);
+questions.Questions();
 // 2. Create a Quiz class with the following properties:
 // ● questions(array):An array of Question objects.
 // ● currentQuestionIndex(number): The index of the current question in the
@@ -86,9 +103,36 @@ person.calculateRentalDuration();
 // ● submitAnswer: Takes a user's answer as a parameter, checks if the answer is
 // correct using the checkAnswer method of the Question class, and updates the
 //score if the answer is correct.
- 
+class Quiz{
+    constructor(questions,currentQuestionIndex,){
+        this.questions=questions;
+        this.currentQuestionIndex=currentQuestionIndex;
+        this.score=score;
 
+        
+    }
+   addQuestions(){
+        console.log(quiz);
+    }
+    nextQuestions(){
+        console.log(quiz);
+    }
+    submitAnswer(answer){
+        console.log(quiz);
+    }
 
+};
 
+let quiz=Quiz("question");
+console.log(quiz);
+quiz.addQuestions();
 
+let quizs=Quiz("answer");
+console.log(quiz);
+quiz.nextQuestions();
+
+let quizes=Quiz("question");
+console.log(quiz);
+quiz.submitAnswer
+();
 
